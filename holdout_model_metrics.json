@@ -1,0 +1,22 @@
+{
+  "train_records": 175341,
+  "test_records": 82332,
+  "train_columns": 45,
+  "test_columns": 45,
+  "model": "HistGradientBoostingClassifier",
+  "split": "official UNSW-NB15 train/test partitions",
+  "accuracy": 0.8753825972890249,
+  "balanced_accuracy": 0.8628316826488538,
+  "attack_precision": 0.8223529411764706,
+  "attack_recall": 0.9868525544868967,
+  "attack_f1": 0.8971242931055228,
+  "true_negative": 27336,
+  "false_positive": 9664,
+  "false_negative": 596,
+  "true_positive": 44736,
+  "false_positive_rate": 0.2611891891891892,
+  "miss_rate": 0.013147445513103326,
+  "features_used": 42,
+  "test_used_only_for_evaluation": true,
+  "scope": "historical academic benchmark; not a production SOC"
+}

@@ -1,0 +1,8 @@
+priority,recommendation,evidence,action,success_measure
+1,Report evaluation honestly,Test attack recall 98.7%; 596 false negatives,Prioritize recall and review missed attack categories alongside precision,"Track held-out precision, recall, F1 and miss rate"
+2,Investigate false alerts,"9,664 false positives; FPR 26.1%",Examine normal traffic incorrectly flagged in a controlled validation sample,Monitor false-positive rate and analyst-review burden
+3,Investigate category-level blind spots,Per-category held-out errors exported,Review underperforming categories and imbalance before choosing model changes,Report attack-category recall and sample support
+4,Preserve leakage-safe evaluation,Official training and held-out testing partitions are separate,"Fit encoders, imputers and model only on training partition",No preprocessing fit on test; repeatable metrics
+5,Strengthen source data validation,"175,341 train rows; 82,332 test rows","Monitor missingness, duplicates, schema and numeric conversion failures",Schema passes and audit CSVs reconcile
+6,Use SQL segmentation for triage,10 categories including Normal in test,"Review patterns by service, protocol, state and category without inventing attack chronology",SQL groups reconcile to total test records
+7,Validate on relevant modern data before operational use,UNSW-NB15 is a historical research benchmark,"Obtain authorized recent datasets and evaluate drift, deployment risks and privacy",Never claim live SOC capability without separate validation

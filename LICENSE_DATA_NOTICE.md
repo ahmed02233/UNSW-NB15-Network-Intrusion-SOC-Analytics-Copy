@@ -1,0 +1,1 @@
+UNSW-NB15 originates from UNSW Canberra. Verify the upstream redistribution rights before publishing raw CSV files. This package excludes source raw records. Cite UNSW researchers and research papers.

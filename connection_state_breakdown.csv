@@ -1,0 +1,17 @@
+split,state,records,attacks
+test,FIN,39339,15167
+test,INT,34163,29678
+test,CON,6982,349
+test,REQ,1842,135
+test,ACC,4,2
+test,RST,1,0
+test,CLO,1,1
+train,INT,82275,76560
+train,FIN,77825,40650
+train,CON,13152,1053
+train,REQ,1991,1066
+train,RST,83,12
+train,ECO,12,0
+train,no,1,0
+train,URN,1,0
+train,PAR,1,0

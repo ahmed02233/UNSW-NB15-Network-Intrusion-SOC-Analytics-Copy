@@ -1,0 +1,11 @@
+attack_cat,records,attacks,flagged,true_positives,missed_attacks
+Analysis,677,677,653,653,24
+Backdoor,583,583,583,583,0
+DoS,4089,4089,4086,4086,3
+Exploits,11132,11132,11083,11083,49
+Fuzzers,6062,6062,5550,5550,512
+Generic,18871,18871,18870,18870,1
+Normal,37000,0,9664,0,0
+Reconnaissance,3496,3496,3492,3492,4
+Shellcode,378,378,375,375,3
+Worms,44,44,44,44,0
