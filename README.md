@@ -31,7 +31,9 @@ Defensive SQL, Python and machine-learning analysis of the **UNSW-NB15 historica
 | False negatives | 596 |
 
 ## SOC-style static dashboard
-![Historical UNSW-NB15 SOC-style executive dashboard](figures/soc_executive_dashboard.png)
+Reconstructed SVG dashboard from published repository outputs; the original Colab-generated PNG was not available in this repository. Values are drawn from `holdout_model_metrics.json`, `attack_category_by_split.csv`, and `category_detection_performance.csv`.
+
+![Historical UNSW-NB15 SOC-style executive dashboard](soc_executive_dashboard.svg)
 
 ## Recommendations
 1. **Report evaluation honestly** — Test attack recall 98.7%; 596 false negatives. Action: Prioritize recall and review missed attack categories alongside precision. KPI: Track held-out precision, recall, F1 and miss rate.
@@ -43,7 +45,7 @@ Defensive SQL, Python and machine-learning analysis of the **UNSW-NB15 historica
 7. **Validate on relevant modern data before operational use** — UNSW-NB15 is a historical research benchmark. Action: Obtain authorized recent datasets and evaluate drift, deployment risks and privacy. KPI: Never claim live SOC capability without separate validation.
 
 ## Project outputs
-- `outputs/data_quality_audit.csv`: train/test data integrity
+- `data_quality_audit.csv`: train/test data integrity
 - `outputs/attack_category_by_split.csv`: category distributions
 - `outputs/protocol_breakdown.csv`, `service_breakdown.csv`, `connection_state_breakdown.csv`: reconciled SQL
 - `outputs/holdout_model_metrics.json`: benchmark confusion matrix and model metrics
@@ -56,4 +58,4 @@ Defensive SQL, Python and machine-learning analysis of the **UNSW-NB15 historica
 - Only use data and cloud environments with legitimate authorization.
 
 ## Reproduce on Google Colab
-Open `Project_12_UNSW_NB15_SOC_Analytics.ipynb`; run all eight code cells; upload the two official split CSV files or a ZIP containing them. The last cell downloads a ZIP with the deliverables. Upload the saved notebook and extracted project files (not just the ZIP) to GitHub.
+Open `Project_12_UNSW_NB15_SOC_Analytics_AutoDownload.ipynb`; run all eight code cells; the notebook tries to download the split CSV files automatically, and requests manual upload if retrieval fails. The last cell downloads a ZIP with the deliverables. Upload the saved notebook and extracted project files (not just the ZIP) to GitHub.
